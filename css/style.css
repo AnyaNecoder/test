@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fb;
+    font-family: Verdana, sans-serif;
+}
+
+button {
+    margin: 0;
+}
+
+.container {
+    max-width: 1160px;
+    padding: 25px 10px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: 355px;
+    height: 387px;
+    border: 1px solid #CED4DA;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+.card__body {
+    background-color: #6C757D;
+    height: 228px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.card__title {    
+    font-weight: 400;
+    font-size: 17px;
+    color: #fff;
+}    
+
+.card__info {
+    height: 156px;
+    background-color: #fff;
+    padding: 20px 22px;    
+}
+
+.card__info-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    line-height: 1.5;
+    margin-bottom: 20px;     
+}
+
+.card__info-btn {
+    width: 46px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    border-radius: 3px;
+    cursor: pointer;    
+}
+
+.card__info-btn--edit {
+    margin-left: -6px;
+    border-radius: 0 3px 3px 0;
+    border-left: none;
+}
+
+.card__info-btn--view {
+    border-radius: 3px 0 0 3px;
+}
+
+.card__info span {
+    color: #6c757d;
+    font-size: 12px;
+    display: inline-block;   
+    transform: translateX(170px);
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .container {
+        justify-content: space-around;
+    }
+    .card{
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .card {        
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {        
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 410px) {
+    .card {
+        width: 100%;             
+    }
+    .card__title {        
+        font-size: 15px;        
+    }
+    .card__info-text {
+        font-size: 13px; 
+    }
+    .card__info-btn {
+        width: 40px;
+        height: 24px;
+        font-size: 13px;
+    }
+    .card__info span {        
+        font-size: 12px;         
+        transform: translateX(130px);
+    }
+}
+
+@media (max-width: 350px) {
+    .card__info-btn {
+        width: 40px;
+        height: 24px;
+        font-size: 13px;
+    }
+    .card__info span {        
+        font-size: 12px;         
+        transform: translateX(100px);
+    }
+}
